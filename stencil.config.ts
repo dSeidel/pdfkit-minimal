@@ -1,5 +1,5 @@
 import { Config } from '@stencil/core';
-//import nodePolyfills from 'rollup-plugin-node-polyfills';
+import nodePolyfills from 'rollup-plugin-node-polyfills';
 //import babel from '@rollup/plugin-babel';
 
 // https://stenciljs.com/docs/config
@@ -16,19 +16,16 @@ export const config: Config = {
       baseUrl: 'https://myapp.local/',
     },
   ],
-  /*rollupPlugins: {
-    before: [
+  rollupPlugins: {
+    /*  before: [
       babel({
         plugins: [['@babel/plugin-proposal-decorators', { legacy: true }]],
       }),
     ],
-    after: [
-      nodePolyfills({
-        fs: false,
-      }),
-    ],
+    */
+    after: [nodePolyfills()],
   },
-  commonjs: {
+  /*commonjs: {
     transformMixedEsModules: true,
   },*/
 };
