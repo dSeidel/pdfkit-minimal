@@ -24,7 +24,7 @@ export const config: Config = {
     ],
     after: [nodePolyfills()],
   },
-  /*commonjs: {
+  commonjs: {
     transformMixedEsModules: true,
-  },*/
+  },
 };
