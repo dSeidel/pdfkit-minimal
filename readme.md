@@ -85,8 +85,6 @@ index-bad3e30f.js:3539 ReferenceError: require is not defined
 
 The line it `app-root.entry.js` is `const fs$1 = require('fs');`
 
-````
-
 FOURTH TRY: With commonjs option `transformMixedEsModules` (not typed, but seems to work in the `stencil.config.ts`):
 
 ```bash
@@ -102,7 +100,7 @@ babelHelpers: 'bundled' option was used by default. It is recommended to configu
 [43:42.7]  copy finished (3 files) in 756 ms
 [43:55.8]  generate lazy finished in 13.82 s
 [43:55.8]  build finished in 15.98 s
-````
+```
 
 BUT IN BROWSER (using `npm start` to run the app):
 
